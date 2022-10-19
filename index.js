@@ -57,6 +57,7 @@ function clickHandler() {
     } else {
       hideGifLoss();
       hideGifProfit();
+      hideMajorLoss();
       showMessage("Hey, you sold it cost to cost");
     }
   } else {
