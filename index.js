@@ -13,20 +13,28 @@ function clickHandler() {
   const profit = q * (c - i);
   const percent = (profit / (i * q)) * 100;
 
-  if (profit > 0) {
-    showMessageProfit(
-      "Hey, the profit is " + profit + " and the percent is " + percent + "%"
-    );
-  } else if (profit < 0) {
-    showMessageLoss(
-      "Hey, you made a loss of " +
-        profit +
-        " and the percent is " +
-        percent +
-        "%"
-    );
+  if (i > 0 && q > 0 && c > 0) {
+    if (profit > 0) {
+      showMessageProfit(
+        "Awesome! Your profit is Rs." +
+          profit +
+          " and the percent is " +
+          percent +
+          "%"
+      );
+    } else if (profit < 0) {
+      showMessageLoss(
+        "Oh no! You made a loss of Rs." +
+          Math.abs(profit) +
+          " and the percent is " +
+          percent +
+          "%"
+      );
+    } else {
+      showMessage("Hey, you sold it cost to cost");
+    }
   } else {
-    showMessage("Hey, you sold it cost to cost");
+    showMessage("Please enter only positive number!");
   }
 }
 
