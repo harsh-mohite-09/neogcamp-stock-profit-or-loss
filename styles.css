@@ -63,8 +63,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  margin: auto;
-  margin-top: 3.5em;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 img {
@@ -75,4 +76,26 @@ img {
 .form-container {
   display: flex;
   flex-direction: column;
+}
+
+.gif-1 {
+  width: 300px;
+  display: inline;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+
+.gif-2 {
+  width: 300px;
+  display: inline;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
