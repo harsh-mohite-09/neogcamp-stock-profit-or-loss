@@ -10,13 +10,31 @@
   <body>
     <div class="container">
       <h1 class="heading">Stock Profit & Loss Calculator</h1>
-      <label for="initial-price" class="label">Initial Price</label>
-      <input id="initial-price" class="input" type="number" min="0" />
-      <label for="qty" class="label">Quantity of Stocks</label>
-      <input id="qty" class="input" type="number" min="0" />
-      <label for="current-price" class="label">Current Price</label>
-      <input id="current-price" class="input" type="number" min="0" />
-      <button id="check-button">Calculate</button>
+
+      <form onsubmit="return false">
+        <div class="form-container">
+          <label for="initial-price" class="label">Initial Price</label>
+          <input
+            id="initial-price"
+            class="input"
+            type="number"
+            min="0"
+            required
+          />
+          <label for="qty" class="label">Quantity of Stocks</label>
+          <input id="qty" class="input" type="number" min="0" required />
+          <label for="current-price" class="label">Current Price</label>
+          <input
+            id="current-price"
+            class="input"
+            type="number"
+            min="0"
+            required
+          />
+          <button id="check-button" type="submit">Calculate</button>
+        </div>
+      </form>
+
       <p id="output"></p>
     </div>
     <footer class="footer-container">

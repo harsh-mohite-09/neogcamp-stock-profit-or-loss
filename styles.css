@@ -71,3 +71,8 @@ img {
   width: 30px;
   margin: 10px 10px;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
